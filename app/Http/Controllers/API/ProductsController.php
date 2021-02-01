@@ -12,7 +12,7 @@ class ProductsController extends Controller
 {
     // Auth Guard
     public function __construct() {
-        $this->middleware('auth:api', ['except' => ['all_products']]);
+        $this->middleware('auth:api');
     }
 
     // New Product Create
